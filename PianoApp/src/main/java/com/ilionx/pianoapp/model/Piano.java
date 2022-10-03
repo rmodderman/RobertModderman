@@ -50,4 +50,10 @@ public class Piano {
         this.localDateBuilt = LocalDate
                 .parse(dateBuilt, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
     }
+
+    // Dit zou ook nog moeten kunnen werken en dan moet je in Postman: "localDateBuilt" : "2022-10-03"  sturen
+    // maar bovenstaande werkt dus. In het wild kan het zijn dat men onderstaande van je verwacht.
+    public void setLocalDateBuilt(LocalDate localDateBuilt) {
+        this.localDateBuilt = localDateBuilt;
+    }
 }
